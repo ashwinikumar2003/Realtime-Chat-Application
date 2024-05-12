@@ -27,14 +27,14 @@ cd Realtime-Chat-Application
 cd Chat && npm install
 
 ## Usage
-**Start the server:**\n
+**Start the server:**
 
 npm run dev
 Open your web browser and navigate to http://localhost:5000 to access the chat application.
 
 ## API Routes
 
-**Authentication**\n
+- **Authentication**
 POST /api/auth/register: Register a new user.
 
 Request Body: { "email": "user@example.com", "password": "password123" }
@@ -44,7 +44,7 @@ POST /api/auth/login: Log in an existing user.
 Request Body: { "email": "user@example.com", "password": "password123" }
 Response: { "token": "JWT_TOKEN" }
 
-**Chat**\n
+- **Chat**
 POST /api/chat/send-message: Send a chat message.
 
 Request Body: { "sender": "SENDER_ID", "receiver": "RECEIVER_ID", "content": "Hello!" }
@@ -57,13 +57,13 @@ Response: { "messages": [...] }
 ## Environment Variables
 Create a .env file in the server directory with the following variables:
 
-PORT=5000\n
-MONGODB_URI=mongodb://your_mongodb_url\n
-JWT_SECRET=your_jwt_secret\n
+PORT=5000
+MONGODB_URI=mongodb://your_mongodb_url
+JWT_SECRET=your_jwt_secret
 
 ## Technologies Used
--MongoDB: NoSQL database for storing chat messages and user data.\n
--Express.js: Node.js web application framework for building the server.\n
--Node.js: JavaScript runtime environment for running the server.\n
--Socket.io: Real-time engine for bi-directional communication between clients and server.\n
--JSON Web Tokens (JWT): Secure method for authenticating users.
+- MongoDB: NoSQL database for storing chat messages and user data.
+- Express.js: Node.js web application framework for building the server.
+- Node.js: JavaScript runtime environment for running the server.
+- Socket.io: Real-time engine for bi-directional communication between clients and server.
+- JSON Web Tokens (JWT): Secure method for authenticating user.
