@@ -57,9 +57,9 @@ Response: { "messages": [...] }
 ## Environment Variables
 Create a .env file in the server directory with the following variables:
 
-PORT=5000
-MONGODB_URI=mongodb://your_mongodb_url
-JWT_SECRET=your_jwt_secret
+- PORT=5000
+- MONGODB_URI=mongodb://your_mongodb_url
+- JWT_SECRET=your_jwt_secret
 
 ## Technologies Used
 - MongoDB: NoSQL database for storing chat messages and user data.
